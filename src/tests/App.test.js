@@ -2,8 +2,16 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import App from "../components/App";
 
-test("renders Premier League", () => {
-  render(<App />);
-  const linkElement = screen.getByText(/premier league/i);
-  expect(linkElement).toBeInTheDocument();
+describe("Premier League", () => {
+  it("renders correctly", () => {
+    const { asFragment } = render(<App />);
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("renders Premier League", () => {
+    render(<App />);
+    const linkElement = screen.getByText(/premier league/i);
+    expect(linkElement).toBeInTheDocument();
+  });
 });
