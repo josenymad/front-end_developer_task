@@ -1,11 +1,18 @@
 import React from "react";
 
-const MatchInfo = ({ teams }) => {
-  const { home, away } = teams;
+const MatchInfo = ({ teams, scores }) => {
+  const { homeTeam, awayTeam } = teams;
+  const { homeScore, awayScore } = scores;
   return (
-    <div className="MatchInfo">
-      <h2 className="MatchInfo__home-team">{home}</h2>
-      <h2 className="MatchInfo__away-team">{away}</h2>
+    <div className="match-info">
+      <div className="match-info__home-team">
+        <h2 className="match-info__home-team__name">{homeTeam}</h2>
+        <h3 className="match-info__home-team__score">{homeScore}</h3>
+      </div>
+      <div className="match-info__away-team">
+        <h2 className="match-info__away-team__name">{awayTeam}</h2>
+        <h3 className="match-info__away-team__score">{awayScore}</h3>
+      </div>
     </div>
   );
 };
