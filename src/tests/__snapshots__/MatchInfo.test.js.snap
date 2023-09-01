@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Match Info renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="MatchInfo"
+  >
+    <h2
+      class="MatchInfo__home-team"
+    >
+      Arsenal
+    </h2>
+    <h2
+      class="MatchInfo__away-team"
+    >
+      Fulham
+    </h2>
+  </div>
+</DocumentFragment>
+`;

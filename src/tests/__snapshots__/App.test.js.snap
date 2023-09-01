@@ -5,9 +5,21 @@ exports[`Premier League renders correctly 1`] = `
   <div
     class="App"
   >
-    <h1>
+    <h1
+      class="App__header"
+    >
       Premier League
     </h1>
+    <div
+      class="MatchInfo"
+    >
+      <h2
+        class="MatchInfo__home-team"
+      />
+      <h2
+        class="MatchInfo__away-team"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
