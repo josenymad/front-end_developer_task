@@ -11,7 +11,22 @@ describe("Premier League", () => {
 
   it("renders Premier League", () => {
     render(<App />);
-    const linkElement = screen.getByText(/premier league/i);
-    expect(linkElement).toBeInTheDocument();
+    const premierLeague = screen.getByText(/premier league/i);
+
+    expect(premierLeague).toBeInTheDocument();
+  });
+
+  it("renders Arsenal", () => {
+    render(<App />);
+    const arsenal = screen.getByText(/arsenal/i);
+
+    expect(arsenal).toBeInTheDocument();
+  });
+
+  it("renders Fulham", () => {
+    render(<App />);
+    const fulham = screen.getByText(/fulham/i);
+
+    expect(fulham).toBeInTheDocument();
   });
 });
