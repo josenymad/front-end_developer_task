@@ -1,0 +1,7 @@
+.detailed-match-stats__full-time__container {
+    width: 72.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+}
