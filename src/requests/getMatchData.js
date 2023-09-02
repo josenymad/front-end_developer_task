@@ -6,10 +6,10 @@ const getMatchData = async (setMatchData) => {
   try {
     // destructuring nested objects from API response
     const {
-      data: { match },
+      data: { match: matchData },
     } = await axios.get(endpoint);
 
-    setMatchData(match);
+    setMatchData(matchData);
   } catch (error) {
     console.log(error);
   }

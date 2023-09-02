@@ -10,18 +10,23 @@ const App = () => {
     getMatchData(setMatchData);
   }, []);
 
-  return (
-    <div className="App">
-      <h1 className="App__header">Premier League</h1>
-      {Object.keys(matchData).length ? (
+  // the match data has loaded
+  if (Object.keys(matchData).length) {
+    const { name: competitionName } = matchData.meta.competition;
+
+    return (
+      <div className="App">
+        <h1 className="App__header">{competitionName}</h1>
         <MatchInfo matchData={matchData} />
-      ) : (
-        <p className="App__no-data">
-          Sorry, there may be a problem with our servers if the stats have not
-          loaded after a while. Please try again later.
-        </p>
-      )}
-    </div>
+      </div>
+    );
+  }
+
+  return (
+    <p className="App__no-data">
+      Sorry, there may be a problem with our servers if the stats have not
+      loaded after a while. Please try again later.
+    </p>
   );
 };
 
