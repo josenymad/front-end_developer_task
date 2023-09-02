@@ -9,10 +9,12 @@ describe("Premier League", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("renders Premier League", () => {
+  it("renders error message when no data is fetched", () => {
     render(<App />);
-    const premierLeague = screen.getByText(/premier league/i);
+    const errorMessage = screen.getByText(
+      "Sorry, there may be a problem with our servers if the stats have not loaded after a while. Please try again later.",
+    );
 
-    expect(premierLeague).toBeInTheDocument();
+    expect(errorMessage).toBeInTheDocument();
   });
 });

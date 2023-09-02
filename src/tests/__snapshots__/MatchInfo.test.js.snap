@@ -3,18 +3,135 @@
 exports[`Match Info renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="MatchInfo"
+    class="match-info"
   >
-    <h2
-      class="MatchInfo__home-team"
+    <div
+      class="match-info__results"
     >
-      Arsenal
-    </h2>
-    <h2
-      class="MatchInfo__away-team"
+      <div
+        class="match-info__home-team"
+      >
+        <img
+          alt="Home Team Badge"
+          class="match-info__home-team__badge"
+          src="arsenal.png"
+        />
+        <h2
+          class="match-info__home-team__name"
+        >
+          Arsenal
+        </h2>
+        <h3
+          class="match-info__home-team__score"
+        >
+          2
+        </h3>
+      </div>
+      <div
+        class="match-info__away-team"
+      >
+        <img
+          alt="Away Team Badge"
+          class="match-info__away-team__badge"
+          src="fulham.png"
+        />
+        <h2
+          class="match-info__away-team__name"
+        >
+          Fulham
+        </h2>
+        <h3
+          class="match-info__away-team__score"
+        >
+          2
+        </h3>
+      </div>
+    </div>
+    <div
+      class="detailed-match-stats"
     >
-      Fulham
-    </h2>
+      <h4
+        class="detailed-match-stats__full-time__header"
+      >
+        Full Time
+      </h4>
+      <div
+        class="detailed-match-stats__full-time__container"
+      >
+        <div
+          class="detailed-match-stats__full-time__home-team"
+        >
+          <p
+            class="detailed-match-stats__full-time__home-team__shots"
+          >
+            19
+          </p>
+          <p
+            class="detailed-match-stats__full-time__home-team__shots-on-target"
+          >
+            11
+          </p>
+          <p
+            class="detailed-match-stats__full-time__home-team__corners"
+          >
+            8
+          </p>
+          <p
+            class="detailed-match-stats__full-time__home-team__possession"
+          >
+            71.1%
+          </p>
+        </div>
+        <div
+          class="detailed-match-stats__full-time__descriptions"
+        >
+          <p
+            class="detailed-match-stats__full-time__descriptions__shots"
+          >
+            Shots
+          </p>
+          <p
+            class="detailed-match-stats__full-time__descriptions__shots-on-target"
+          >
+            Shots On Target
+          </p>
+          <p
+            class="detailed-match-stats__full-time__descriptions__corners"
+          >
+            Corners
+          </p>
+          <p
+            class="detailed-match-stats__full-time__descriptions__possession"
+          >
+            Possession
+          </p>
+        </div>
+        <div
+          class="detailed-match-stats__full-time__away-team"
+        >
+          <p
+            class="detailed-match-stats__full-time__away-team__shots"
+          >
+            8
+          </p>
+          <p
+            class="detailed-match-stats__full-time__away-team__shots-on-target"
+          >
+            3
+          </p>
+          <p
+            class="detailed-match-stats__full-time__away-team__corners"
+          >
+            3
+          </p>
+          <p
+            class="detailed-match-stats__full-time__away-team__possession"
+          >
+            28.9
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;

@@ -1,29 +1,27 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import MatchInfo from "../components/MatchInfo";
+import mockData from "./mockData.json";
 
 describe("Match Info", () => {
-  const validProps = {
-    home: "Arsenal",
-    away: "Fulham",
-  };
+  const { match: matchData } = mockData;
 
   it("renders correctly", () => {
-    const { asFragment } = render(<MatchInfo teams={validProps} />);
+    const { asFragment } = render(<MatchInfo matchData={matchData} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("renders Arsenal", () => {
-    render(<MatchInfo teams={validProps} />);
-    const arsenal = screen.getByText(/arsenal/i);
+    render(<MatchInfo matchData={matchData} />);
+    const arsenal = screen.getByText("Arsenal");
 
     expect(arsenal).toBeInTheDocument();
   });
 
   it("renders Fulham", () => {
-    render(<MatchInfo teams={validProps} />);
-    const fulham = screen.getByText(/fulham/i);
+    render(<MatchInfo matchData={matchData} />);
+    const fulham = screen.getByText("Fulham");
 
     expect(fulham).toBeInTheDocument();
   });
