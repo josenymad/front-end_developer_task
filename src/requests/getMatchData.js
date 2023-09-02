@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const getMatchData = async (setTeams, setScores) => {
+const getMatchData = async (setMatchData) => {
   const endpoint = "https://frontend-tech-test-ashy.vercel.app/api/match";
 
   try {
@@ -9,14 +9,7 @@ const getMatchData = async (setTeams, setScores) => {
       data: { match },
     } = await axios.get(endpoint);
 
-    setTeams({
-      homeTeam: match.contestant[0].name,
-      awayTeam: match.contestant[1].name,
-    });
-    setScores({
-      homeScore: match.liveData.matchDetails.scores.total.home,
-      awayScore: match.liveData.matchDetails.scores.total.away,
-    });
+    setMatchData(match);
   } catch (error) {
     console.log(error);
   }

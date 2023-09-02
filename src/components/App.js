@@ -4,17 +4,23 @@ import getMatchData from "../requests/getMatchData";
 import MatchInfo from "./MatchInfo";
 
 const App = () => {
-  const [teams, setTeams] = useState({ homeTeam: "", awayTeam: "" });
-  const [scores, setScores] = useState({ homeScore: 0, awayScore: 0 });
+  const [matchData, setMatchData] = useState({});
 
   useEffect(() => {
-    getMatchData(setTeams, setScores);
+    getMatchData(setMatchData);
   }, []);
 
   return (
     <div className="App">
       <h1 className="App__header">Premier League</h1>
-      <MatchInfo teams={teams} scores={scores} />
+      {Object.keys(matchData).length ? (
+        <MatchInfo matchData={matchData} />
+      ) : (
+        <p className="App__no-data">
+          Sorry, there may be a problem with our servers if the stats have not
+          loaded after a while. Please try again later.
+        </p>
+      )}
     </div>
   );
 };
