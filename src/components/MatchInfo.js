@@ -5,7 +5,6 @@ import DetailedMatchStats from "./DetailedMatchStats";
 import "../styles/match-info.css";
 
 const MatchInfo = ({ matchData }) => {
-  // destructuring to save variables for rendering
   const { contestant, liveData } = matchData;
   const homeTeamName = contestant[0].name;
   const awayTeamName = contestant[1].name;
@@ -34,7 +33,6 @@ const MatchInfo = ({ matchData }) => {
           <h3 className="match-info__away-team__score">{awayTeamScore}</h3>
         </div>
       </div>
-
       <DetailedMatchStats liveData={liveData} />
     </div>
   );

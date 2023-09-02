@@ -5,7 +5,7 @@ exports[`Premier League renders correctly 1`] = `
   <p
     class="App__no-data"
   >
-    . Sorry, please try again later.
+    If the stats haven't loaded after a while there may be a problem with the server. Sorry, please try again later.
   </p>
 </DocumentFragment>
 `;

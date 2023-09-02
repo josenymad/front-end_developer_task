@@ -4,14 +4,16 @@ import getMatchData from "../requests/getMatchData";
 import MatchInfo from "./MatchInfo";
 
 const App = () => {
-  const [matchData, setMatchData] = useState({});
-  const [alert, setAlert] = useState("");
+  const [matchData, setMatchData] = useState();
+  const [alert, setAlert] = useState(
+    "If the stats haven't loaded after a while there may be a problem with the server",
+  );
 
   useEffect(() => {
     getMatchData(setMatchData, setAlert);
   }, []);
 
-  if (/* the match data has loaded */ Object.keys(matchData).length) {
+  if (matchData) {
     const { name: competitionName } = matchData.meta.competition;
 
     return (

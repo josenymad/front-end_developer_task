@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/detailed-match-stats.css";
 
 const DetailedMatchStats = ({ liveData }) => {
-  // destructuring to save variables for rendering
+  // used array destructuring to save multiple variables efficiently
   const [
     { value: homeTeamShots },
     { value: homeTeamShotsOnTarget },
