@@ -24,3 +24,5 @@ React app which fetches and displays football match results, including detailed 
 ## Additional Features
 
 With more time, I would have written further tests, worked on some styling to make it visually appealing and also added a feature to display first half and second half match data
+
+![Screenshot 2023-09-02 at 14 44 11](https://github.com/josenymad/front-end_developer_task/assets/124208499/fa644ac5-00d9-4582-8851-58ccc28ff886)
