@@ -12,14 +12,14 @@ describe("Match Info", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("renders Arsenal", () => {
+  it("renders home team name", () => {
     render(<MatchInfo matchData={matchData} />);
     const arsenal = screen.getByText("Arsenal");
 
     expect(arsenal).toBeInTheDocument();
   });
 
-  it("renders Fulham", () => {
+  it("renders away team name", () => {
     render(<MatchInfo matchData={matchData} />);
     const fulham = screen.getByText("Fulham");
 

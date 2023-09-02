@@ -5,13 +5,13 @@ import MatchInfo from "./MatchInfo";
 
 const App = () => {
   const [matchData, setMatchData] = useState({});
+  const [alert, setAlert] = useState("");
 
   useEffect(() => {
-    getMatchData(setMatchData);
+    getMatchData(setMatchData, setAlert);
   }, []);
 
-  // the match data has loaded
-  if (Object.keys(matchData).length) {
+  if (/* the match data has loaded */ Object.keys(matchData).length) {
     const { name: competitionName } = matchData.meta.competition;
 
     return (
@@ -23,10 +23,7 @@ const App = () => {
   }
 
   return (
-    <p className="App__no-data">
-      Sorry, there may be a problem with our servers if the stats have not
-      loaded after a while. Please try again later.
-    </p>
+    <p className="App__no-data">{alert}. Sorry, please try again later.</p>
   );
 };
 

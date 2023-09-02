@@ -105,6 +105,16 @@ exports[`Match Info renders correctly 1`] = `
           >
             Possession
           </p>
+          <p
+            class="detailed-match-stats__full-time__descriptions__yellow-cards"
+          >
+            Yellow Cards
+          </p>
+          <p
+            class="detailed-match-stats__full-time__descriptions__red-cards"
+          >
+            Red Cards
+          </p>
         </div>
         <div
           class="detailed-match-stats__full-time__away-team"
@@ -127,7 +137,17 @@ exports[`Match Info renders correctly 1`] = `
           <p
             class="detailed-match-stats__full-time__away-team__possession"
           >
-            28.9
+            28.9%
+          </p>
+          <p
+            class="detailed-match-stats__full-time__away-team__yellow-cards"
+          >
+            4
+          </p>
+          <p
+            class="detailed-match-stats__full-time__away-team__red-cards"
+          >
+            1
           </p>
         </div>
       </div>

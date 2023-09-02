@@ -20,3 +20,7 @@ React app which fetches and displays football match results, including detailed 
 - Navigate to the directory created on your machine, and run `npm install` to download the dependencies
 - Run `npm start`
 - To run the tests, run `npm test`
+
+## Additional Features
+
+With more time, I would have written more tests and worked on some styling to make it visually appealing

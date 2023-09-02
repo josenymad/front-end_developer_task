@@ -10,8 +10,8 @@ const DetailedMatchStats = ({ liveData }) => {
     { value: homeTeamPossession },
   ] = liveData.lineups.home.stats;
   const [
-    ,
-    ,
+    { value: awayTeamYellowCards },
+    { value: awayTeamRedCards },
     { value: awayTeamCorners },
     { value: awayTeamShotsOnTarget },
     { value: awayTeamShots },
@@ -49,6 +49,12 @@ const DetailedMatchStats = ({ liveData }) => {
           <p className="detailed-match-stats__full-time__descriptions__possession">
             Possession
           </p>
+          <p className="detailed-match-stats__full-time__descriptions__yellow-cards">
+            Yellow Cards
+          </p>
+          <p className="detailed-match-stats__full-time__descriptions__red-cards">
+            Red Cards
+          </p>
         </div>
         <div className="detailed-match-stats__full-time__away-team">
           <p className="detailed-match-stats__full-time__away-team__shots">
@@ -61,7 +67,13 @@ const DetailedMatchStats = ({ liveData }) => {
             {awayTeamCorners}
           </p>
           <p className="detailed-match-stats__full-time__away-team__possession">
-            {awayTeamPossession}
+            {awayTeamPossession}%
+          </p>
+          <p className="detailed-match-stats__full-time__away-team__yellow-cards">
+            {awayTeamYellowCards}
+          </p>
+          <p className="detailed-match-stats__full-time__away-team__red-cards">
+            {awayTeamRedCards}
           </p>
         </div>
       </div>

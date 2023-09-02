@@ -11,9 +11,7 @@ describe("Premier League", () => {
 
   it("renders error message when no data is fetched", () => {
     render(<App />);
-    const errorMessage = screen.getByText(
-      "Sorry, there may be a problem with our servers if the stats have not loaded after a while. Please try again later.",
-    );
+    const errorMessage = screen.getByText(". Sorry, please try again later.");
 
     expect(errorMessage).toBeInTheDocument();
   });

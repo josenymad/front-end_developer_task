@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const getMatchData = async (setMatchData) => {
-  const endpoint = "https://frontend-tech-test-ashy.vercel.app/api/match";
+const getMatchData = async (setMatchData, setAlert) => {
+  const endpoint = "https://frontend-tech-test-ashy.vercel.app/api/matchs";
 
   try {
     // destructuring nested objects from API response
@@ -11,7 +11,7 @@ const getMatchData = async (setMatchData) => {
 
     setMatchData(matchData);
   } catch (error) {
-    console.log(error);
+    setAlert(error.message);
   }
 };
 
