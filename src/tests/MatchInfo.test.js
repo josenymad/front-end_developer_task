@@ -25,4 +25,18 @@ describe("Match Info", () => {
 
     expect(fulham).toBeInTheDocument();
   });
+
+  it("renders home team badge", () => {
+    render(<MatchInfo matchData={matchData} />);
+    const homeTeamBadge = screen.getByAltText("Home Team Badge");
+
+    expect(homeTeamBadge).toBeInTheDocument();
+  });
+
+  it("renders away team badge", () => {
+    render(<MatchInfo matchData={matchData} />);
+    const awayTeamBadge = screen.getByAltText("Away Team Badge");
+
+    expect(awayTeamBadge).toBeInTheDocument();
+  });
 });
