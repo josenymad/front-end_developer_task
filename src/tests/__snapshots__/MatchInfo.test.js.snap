@@ -58,98 +58,98 @@ exports[`Match Info renders correctly 1`] = `
       <div
         class="detailed-match-stats__full-time__container"
       >
-        <div
-          class="detailed-match-stats__full-time__home-team"
+        <ul
+          class="detailed-match-stats__full-time__home-team__list"
         >
-          <p
+          <li
             class="detailed-match-stats__full-time__home-team__shots"
           >
             19
-          </p>
-          <p
+          </li>
+          <li
             class="detailed-match-stats__full-time__home-team__shots-on-target"
           >
             11
-          </p>
-          <p
+          </li>
+          <li
             class="detailed-match-stats__full-time__home-team__corners"
           >
             8
-          </p>
-          <p
+          </li>
+          <li
             class="detailed-match-stats__full-time__home-team__possession"
           >
             71.1%
-          </p>
-        </div>
-        <div
-          class="detailed-match-stats__full-time__descriptions"
+          </li>
+        </ul>
+        <ul
+          class="detailed-match-stats__full-time__descriptions__list"
         >
-          <p
+          <li
             class="detailed-match-stats__full-time__descriptions__shots"
           >
             Shots
-          </p>
-          <p
+          </li>
+          <li
             class="detailed-match-stats__full-time__descriptions__shots-on-target"
           >
             Shots On Target
-          </p>
-          <p
+          </li>
+          <li
             class="detailed-match-stats__full-time__descriptions__corners"
           >
             Corners
-          </p>
-          <p
+          </li>
+          <li
             class="detailed-match-stats__full-time__descriptions__possession"
           >
             Possession
-          </p>
-          <p
+          </li>
+          <li
             class="detailed-match-stats__full-time__descriptions__yellow-cards"
           >
             Yellow Cards
-          </p>
-          <p
+          </li>
+          <li
             class="detailed-match-stats__full-time__descriptions__red-cards"
           >
             Red Cards
-          </p>
-        </div>
-        <div
-          class="detailed-match-stats__full-time__away-team"
+          </li>
+        </ul>
+        <ul
+          class="detailed-match-stats__full-time__away-team__list"
         >
-          <p
+          <li
             class="detailed-match-stats__full-time__away-team__shots"
           >
             8
-          </p>
-          <p
+          </li>
+          <li
             class="detailed-match-stats__full-time__away-team__shots-on-target"
           >
             3
-          </p>
-          <p
+          </li>
+          <li
             class="detailed-match-stats__full-time__away-team__corners"
           >
             3
-          </p>
-          <p
+          </li>
+          <li
             class="detailed-match-stats__full-time__away-team__possession"
           >
             28.9%
-          </p>
-          <p
+          </li>
+          <li
             class="detailed-match-stats__full-time__away-team__yellow-cards"
           >
             4
-          </p>
-          <p
+          </li>
+          <li
             class="detailed-match-stats__full-time__away-team__red-cards"
           >
             1
-          </p>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
