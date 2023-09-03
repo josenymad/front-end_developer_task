@@ -5,3 +5,30 @@
     justify-content: space-around;
     margin: auto;
 }
+
+.detailed-match-stats__full-time__home-team__list,
+.detailed-match-stats__full-time__descriptions__list,
+.detailed-match-stats__full-time__away-team__list {
+    padding: 1em;
+}
+
+.detailed-match-stats__full-time__home-team__shots,
+.detailed-match-stats__full-time__home-team__shots-on-target,
+.detailed-match-stats__full-time__home-team__corners,
+.detailed-match-stats__full-time__home-team__possession,
+.detailed-match-stats__full-time__descriptions__shots,
+.detailed-match-stats__full-time__descriptions__shots-on-target,
+.detailed-match-stats__full-time__descriptions__corners,
+.detailed-match-stats__full-time__descriptions__possession,
+.detailed-match-stats__full-time__descriptions__yellow-cards,
+.detailed-match-stats__full-time__descriptions__red-cards,
+.detailed-match-stats__full-time__away-team__shots,
+.detailed-match-stats__full-time__away-team__shots-on-target,
+.detailed-match-stats__full-time__away-team__corners,
+.detailed-match-stats__full-time__away-team__possession,
+.detailed-match-stats__full-time__away-team__yellow-cards,
+.detailed-match-stats__full-time__away-team__red-cards
+ { 
+    list-style: none;
+    margin: 1em;
+}
